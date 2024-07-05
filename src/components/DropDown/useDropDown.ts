@@ -13,22 +13,14 @@ export const useDropDown = (props: DropdownProps) => {
   const { onDelete, onEdit } = props;
 
   const handleEdit = () => {
-    console.log("Edit option selected");
     onEdit();
     setAnchorEl(null);
   };
 
   const handleDelete = () => {
-    console.log("Delete option selected");
     onDelete();
     setAnchorEl(null);
   };
-
-  // useEffect(() => {
-  //   document.addEventListener("mousedown", () => {
-  //     setIsOpen(false);
-  //   });
-  // }, []);
 
   return {
     isOpen,

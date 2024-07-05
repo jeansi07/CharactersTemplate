@@ -55,7 +55,7 @@ export const useCharacterStore = create<CharacterStoreProps>((set, get) => {
     const charactersData =
       charactersFiltered?.slice((page - 1) * PAGE_NUMBER, page * PAGE_NUMBER) ??
       [];
-    console.log(charactersData);
+
     set({
       characters: charactersData,
       pagination: {

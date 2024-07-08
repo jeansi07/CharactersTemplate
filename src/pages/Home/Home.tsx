@@ -149,7 +149,6 @@ export const Home = () => {
           >
             <Alert
               onClose={() => setAlert({ ...alert, show: false })}
-              severity="error"
               variant="filled"
               sx={{ width: "100%" }}
             >
